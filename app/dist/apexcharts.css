@@ -1,5 +1,5 @@
 .image-box .image img {
-  filter: blur(3px);
+  filter: blur(0px);
   padding: 10px;
   border-radius: 50%; /* Hace que el borde de la imagen sea circular */
 }
@@ -16,10 +16,6 @@
 .swiper-container.slider-6 .swiper-slide img {
   filter: none; /* Elimina cualquier filtro de desenfoque */
 }
-
-
-
-
 
 .apexcharts-canvas {
   position: relative;
