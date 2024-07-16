@@ -412,7 +412,7 @@ document.querySelectorAll('[id^="direccion-"]').forEach(function(direccion) {
   
       
       let bnbPrice = 0;
-      const tokenPriceInUSD = 0.015; // PRECIO TOKEN
+      const tokenPriceInUSD = 0.00000001; // PRECIO TOKEN
       let conversionRate = tokenPriceInUSD;
       
       async function fetchBNBPrice() {
@@ -625,7 +625,7 @@ document.querySelectorAll('[id^="direccion-"]').forEach(function(direccion) {
   
       // Función para actualizar el valor progresivo y el tiempo de espera
       function updateValue() {
-        let currentValue = parseFloat(localStorage.getItem('usdt-raised')) || 58139162.50; // Valor inicial
+        let currentValue = parseFloat(localStorage.getItem('usdt-raised')) || 2139162.50; // Valor inicial
         const targetValue = 600000000.00; // Valor objetivo
         const increment = getRandomNumber(10.48, 25.13); // Incremento aleatorio
   
