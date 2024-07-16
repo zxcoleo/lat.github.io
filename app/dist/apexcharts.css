@@ -1,5 +1,5 @@
 .image-box .image img {
-  filter: blur(0px);
+  filter: blur(5px);
   padding: 10px;
   border-radius: 50%; /* Hace que el borde de la imagen sea circular */
 }
