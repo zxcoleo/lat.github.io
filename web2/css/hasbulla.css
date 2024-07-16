@@ -63,8 +63,8 @@
 
 .button_socials {
   color: #000;
-  background-color: #008d8d;
-  background-image: linear-gradient(90deg, rgb(182, 27, 27) 30%, rgb(196, 26, 34) 80%);
+  background-color: #ffffff00;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.336) 50%, rgba(255, 255, 255, 0.329) 50%);
   border: 2px solid linear-gradient(90deg, rgb(0, 190, 133) 30%, rgb(209, 0, 129) 80%);
   border-radius: 100px;
   justify-content: center;
