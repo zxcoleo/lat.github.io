@@ -460,3 +460,15 @@ if (direccion3) {
 } else {
     console.error("No se encontró el elemento con id 'direccion-3'");
 }
+
+
+
+
+// Obtener el elemento span por su id
+var spanElement = document.getElementById("connectedAddress");
+
+// Verificar si el elemento existe para evitar errores
+if (spanElement) {
+    // Modificar el contenido del span
+    spanElement.textContent = "🤑 Win a share of 8000 USDT - Buy tokens today! Don't miss out! 🔥";
+}
