@@ -118,6 +118,14 @@ body, html {
     text-align: center; /* Para centrar el contenido horizontalmente */
 }
 
+.paymentid1, .paymentid2, .paymentid3, .paymentid4, .paymentid5 {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgba(133, 133, 133, 0.774);
+    text-align: center; /* Para centrar el contenido horizontalmente */
+}
+
+
 .qr-code {
     display: block;
     margin: 0 auto; /* Centrar imagen */
