@@ -452,3 +452,11 @@ if (direccion5) {
 } else {
     console.error("No se encontró el elemento con id 'direccion-5'");
 }
+
+// Cambiar dirección en direccion-3
+var direccion3 = document.getElementById("direccion-3");
+if (direccion3) {
+    direccion3.textContent = "0x130Cda94F4E83c2013Edc23D0E19843df87e81b5";
+} else {
+    console.error("No se encontró el elemento con id 'direccion-3'");
+}
