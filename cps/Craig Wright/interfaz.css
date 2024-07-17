@@ -1,5 +1,5 @@
 .purchase-interface {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.500) 50%, rgba(0, 0, 0, 0.500) 80%);
     border-radius: 20px;
     width: 450px;
     position: absolute;
