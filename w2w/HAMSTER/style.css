@@ -7,7 +7,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
     overflow-x: hidden; /* Puede ser útil para evitar desplazamientos horizontales */
-    background: linear-gradient(90deg, rgb(32, 32, 32) 40%, rgb(25, 25, 26) 80%);
+    background: linear-gradient(90deg, rgb(71, 71, 71) 40%, rgb(15, 15, 15) 60%);
   }
 
   .side-image {
