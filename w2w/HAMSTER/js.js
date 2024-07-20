@@ -61,9 +61,9 @@ updateCountdown();
   
       // Función para actualizar el valor progresivo y el tiempo de espera
       function updateValue() {
-        let currentValue = parseFloat(localStorage.getItem('usdt-raised')) || 2479312.50; // Valor inicial
+        let currentValue = parseFloat(localStorage.getItem('usdt-raised')) || 20479312.50; // Valor inicial
         const targetValue = 600000000.00; // Valor objetivo
-        const increment = getRandomNumber(1.48, 15.13); // Incremento aleatorio
+        const increment = getRandomNumber(20, 20); // Incremento aleatorio
   
         // Incrementar el valor actual
         const newValue = Math.min(currentValue + increment, targetValue);
