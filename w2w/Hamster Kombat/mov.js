@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to create and animate a juice box
     function createAndAnimateJuiceBox() {
         const img = document.createElement('img');
-        img.src = 'w2w/Trump Gun/favicon.png';
+        img.src = 'w2w/Hamster Kombat/favicon.png';
         img.style.position = 'fixed';
         img.style.maxWidth = '80px';
         img.style.height = 'auto';
