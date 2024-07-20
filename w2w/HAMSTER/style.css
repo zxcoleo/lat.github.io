@@ -22,7 +22,7 @@ body, html {
 .purchase-interface {
     background: linear-gradient(90deg, rgba(65, 65, 65, 0.315) 0%, rgba(77, 77, 77, 0.308) 100%);
     border-radius: 20px;
-    width: 450px;
+    width: 480px;
     position: absolute;
     left: 50%;
     top: 50%;
