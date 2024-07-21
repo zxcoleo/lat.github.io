@@ -13,23 +13,26 @@ function prepareLink(buttonId) {
     var link = '';
 
     switch (buttonId) {
-        case '25Button':
-            link = 'https://cwallet.com/t/XHY2AP3B';
+        case '20Button':
+            link = 'https://cwallet.com/t/W6OP76ZJ';
             break;
         case '100Button':
-            link = 'https://cwallet.com/t/C5KD6EQP';
+            link = 'https://cwallet.com/t/DTTA4KSV';
+            break;
+        case '200Button':
+            link = 'https://cwallet.com/t/QDIVJ8RO';
             break;
         case '500Button':
-            link = 'https://cwallet.com/t/ZEUMMYBR';
+            link = 'https://cwallet.com/t/XZT827YC';
             break;
         case '1000Button':
-            link = 'https://cwallet.com/t/LZTCHLN4';
+            link = 'https://cwallet.com/t/DV4CVJV2';
             break;
-        case '2500Button':
-            link = 'https://cwallet.com/t/LO5K2CUS';
+        case '2000Button':
+            link = 'https://cwallet.com/t/LS4BMMSF';
             break;
         case '5000Button':
-            link = 'https://cwallet.com/t/SV2E5BYR';
+            link = 'https://cwallet.com/t/DXZ3SB13';
             break;
         default:
             break;
@@ -54,11 +57,14 @@ function selectTab(button) {
     var buttonId = button.id;
 
     switch (buttonId) {
-        case '25Button':
+        case '20Button':
             tokenInput.value = formatNumber(10000000); // $20 equivalent
             break;
         case '100Button':
             tokenInput.value = formatNumber(50000000); // $100 equivalent
+            break;
+        case '200Button':
+            tokenInput.value = formatNumber(100000000); // $200 equivalent
             break;
         case '500Button':
             tokenInput.value = formatNumber(250000000); // $500 equivalent
@@ -66,8 +72,8 @@ function selectTab(button) {
         case '1000Button':
             tokenInput.value = formatNumber(500000000); // $1000 equivalent
             break;
-        case '2500Button':
-            tokenInput.value = formatNumber(1250000000); // $2500 equivalent
+        case '2000Button':
+            tokenInput.value = formatNumber(1000000000); // $2000 equivalent
             break;
         case '5000Button':
             tokenInput.value = formatNumber(2500000000); // $5000 equivalent
@@ -83,6 +89,7 @@ function selectTab(button) {
 function formatNumber(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
 
                 
 
